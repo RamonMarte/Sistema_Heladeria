@@ -1,0 +1,12 @@
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\bin\Debug\net10.0\Heladeria.Contracts.deps.json
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\bin\Debug\net10.0\Heladeria.Contracts.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\bin\Debug\net10.0\Heladeria.Contracts.pdb
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.AssemblyInfoInputs.cache
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.AssemblyInfo.cs
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\refint\Heladeria.Contracts.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.pdb
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\ref\Heladeria.Contracts.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeri.52B5F3FC.Up2Date

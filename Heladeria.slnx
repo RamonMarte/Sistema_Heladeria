@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Heladeria.Api/Heladeria.Api.csproj" />
+  <Project Path="Heladeria.Contracts/Heladeria.Contracts.csproj" />
+  <Project Path="Heladeria.Desktop/Heladeria.Desktop.csproj" />
+</Solution>
