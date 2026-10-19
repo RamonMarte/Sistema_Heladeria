@@ -1,0 +1,153 @@
+﻿<Window x:Class="Heladeria.Desktop.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Heladeria.Desktop.Views"
+        mc:Ignorable="d"
+        Title="Heladería | Iniciar sesión"
+        Height="560"
+        Width="940"
+        MinHeight="520"
+        MinWidth="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Background="#F4F6FA">
+
+    <Window.Resources>
+        <Style x:Key="CampoTexto" TargetType="TextBox">
+            <Setter Property="Height" Value="42"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#D6DCE5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="CampoContrasena" TargetType="PasswordBox">
+            <Setter Property="Height" Value="42"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="#D6DCE5"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0"
+                                     EndPoint="1,1">
+                    <GradientStop Color="#183B56" Offset="0"/>
+                    <GradientStop Color="#176B75" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid Margin="42">
+                <StackPanel VerticalAlignment="Center">
+                    <Border Width="76"
+                            Height="76"
+                            CornerRadius="20"
+                            Background="#FFFFFF"
+                            HorizontalAlignment="Left"
+                            Margin="0,0,0,25">
+                        <TextBlock Text="H"
+                                   FontSize="42"
+                                   FontWeight="Bold"
+                                   Foreground="#176B75"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                    </Border>
+
+                    <TextBlock Text="HELADERÍA"
+                               FontSize="32"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+
+                    <TextBlock Text="Todo tu negocio, bajo control."
+                               FontSize="19"
+                               Foreground="#D8EBEF"
+                               Margin="0,12,0,0"/>
+
+                    <TextBlock Text="Ventas, productos, inventario y estadísticas desde un mismo lugar."
+                               FontSize="14"
+                               Foreground="#D8EBEF"
+                               TextWrapping="Wrap"
+                               MaxWidth="330"
+                               Margin="0,12,0,0"
+                               LineHeight="23"/>
+                </StackPanel>
+
+                <TextBlock Text="Sistema de gestión"
+                           Foreground="#C4E0E5"
+                           VerticalAlignment="Bottom"
+                           FontSize="12"/>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Column="1" Margin="45,35">
+            <StackPanel VerticalAlignment="Center"
+                        MaxWidth="340"
+                        HorizontalAlignment="Center">
+
+                <TextBlock Text="Bienvenido"
+                           FontSize="29"
+                           FontWeight="Bold"
+                           Foreground="#1B2838"/>
+
+                <TextBlock Text="Inicia sesión para continuar."
+                           FontSize="14"
+                           Foreground="#697586"
+                           Margin="0,8,0,30"/>
+
+                <TextBlock Text="Nombre de usuario"
+                           FontWeight="SemiBold"
+                           Foreground="#344054"
+                           Margin="0,0,0,8"/>
+
+                <TextBox Style="{StaticResource CampoTexto}"
+                         Text="{Binding NombreUsuario,
+                                        UpdateSourceTrigger=PropertyChanged}"
+                         MaxLength="60"/>
+
+                <TextBlock Text="Contraseña"
+                           FontWeight="SemiBold"
+                           Foreground="#344054"
+                           Margin="0,20,0,8"/>
+
+                <PasswordBox x:Name="PasswordInput"
+                             Style="{StaticResource CampoContrasena}"
+                             PasswordChanged="PasswordInput_PasswordChanged"
+                             MaxLength="128"/>
+
+                <TextBlock Text="{Binding MensajeError}"
+                           Foreground="#C62828"
+                           TextWrapping="Wrap"
+                           Margin="0,12,0,0"/>
+
+                <Button Content="Iniciar sesión"
+                        Command="{Binding LoginCommand}"
+                        Height="46"
+                        Margin="0,22,0,0"
+                        Background="#176B75"
+                        Foreground="White"
+                        BorderThickness="0"
+                        FontSize="15"
+                        FontWeight="SemiBold"
+                        Cursor="Hand"/>
+
+                <TextBlock Text="Acceso autorizado para el personal."
+                           Foreground="#98A2B3"
+                           FontSize="12"
+                           TextAlignment="Center"
+                           Margin="0,24,0,0"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

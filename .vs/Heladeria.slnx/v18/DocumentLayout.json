@@ -3,6 +3,78 @@
   "WorkspaceRootPath": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\views\\dashboardwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\views\\dashboardwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\views\\puntoventawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\views\\puntoventawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\views\\puntoventawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\views\\puntoventawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\viewmodels\\puntoventaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\viewmodels\\puntoventaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\views\\dashboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\views\\dashboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\viewmodels\\carritoitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\viewmodels\\carritoitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\viewmodels\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\viewmodels\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\services\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\viewmodels\\asyncrelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\viewmodels\\asyncrelaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.desktop\\heladeria.desktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48B437CA-CF7C-4798-A141-BF6E9CAECD16}|Heladeria.Desktop\\Heladeria.Desktop.csproj|solutionrelative:heladeria.desktop\\heladeria.desktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C28AC37-C258-1F02-BCD2-D96D8DAE74D7}|Heladeria.Api\\Heladeria.Api.csproj|c:\\users\\elizabeth\\documents\\rafiki\\proyecto_millonario\\heladeria\\heladeria.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C28AC37-C258-1F02-BCD2-D96D8DAE74D7}|Heladeria.Api\\Heladeria.Api.csproj|solutionrelative:heladeria.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -333,7 +405,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 693,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -344,25 +416,255 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PuntoVentaWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\PuntoVentaWindow.xaml",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Views\\PuntoVentaWindow.xaml",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\PuntoVentaWindow.xaml",
+              "RelativeToolTip": "Heladeria.Desktop\\Views\\PuntoVentaWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-19T01:49:00.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\DashboardWindow.xaml",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Views\\DashboardWindow.xaml",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\DashboardWindow.xaml",
+              "RelativeToolTip": "Heladeria.Desktop\\Views\\DashboardWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-18T13:33:06.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\DashboardWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Views\\DashboardWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\DashboardWindow.xaml.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\Views\\DashboardWindow.xaml.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAuwIUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T13:35:57.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\App.xaml.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\App.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T13:36:40.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\App.xaml",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\App.xaml",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\App.xaml",
+              "RelativeToolTip": "Heladeria.Desktop\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-18T13:36:22.276Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "PuntoVentaWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\PuntoVentaWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Views\\PuntoVentaWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\PuntoVentaWindow.xaml.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\Views\\PuntoVentaWindow.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwBoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:51:07.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PuntoVentaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\PuntoVentaViewModel.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\ViewModels\\PuntoVentaViewModel.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\PuntoVentaViewModel.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\ViewModels\\PuntoVentaViewModel.cs",
+              "ViewState": "AgIAAEsBAAAAAAAAAAAqwF4BAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:45:37.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CarritoItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\CarritoItemViewModel.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\ViewModels\\CarritoItemViewModel.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\CarritoItemViewModel.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\ViewModels\\CarritoItemViewModel.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwCYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:44:11.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\ViewModels\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\RelayCommand.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\ViewModels\\RelayCommand.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:42:48.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Services\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Services\\ApiClient.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\Services\\ApiClient.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvyAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T13:12:22.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Views\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\Views\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAzwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T13:30:57.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\ViewModels\\ViewModelBase.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\ViewModelBase.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\ViewModels\\ViewModelBase.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T13:19:56.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SessionService.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Services\\SessionService.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Services\\SessionService.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Services\\SessionService.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\Services\\SessionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T01:19:19.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Services\\AuthService.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T13:14:00.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Views\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Views\\LoginWindow.xaml",
+              "RelativeToolTip": "Heladeria.Desktop\\Views\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-18T13:27:56.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAywHAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T13:23:00.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AsyncRelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\AsyncRelayCommand.cs",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\ViewModels\\AsyncRelayCommand.cs",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\ViewModels\\AsyncRelayCommand.cs",
+              "RelativeToolTip": "Heladeria.Desktop\\ViewModels\\AsyncRelayCommand.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T13:21:45.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Heladeria.Desktop",
+              "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Heladeria.Desktop.csproj",
+              "RelativeDocumentMoniker": "Heladeria.Desktop\\Heladeria.Desktop.csproj",
+              "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Heladeria.Desktop.csproj",
+              "RelativeToolTip": "Heladeria.Desktop\\Heladeria.Desktop.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-18T13:09:42.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "UsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\UsuariosController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\UsuariosController.cs",
               "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "Heladeria.Api\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAxwAYBAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAALcAAAAAAAAAAAAxwMEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-18T02:26:56.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "UsuarioResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Usuarios\\UsuarioResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Usuarios\\UsuarioResponse.cs",
@@ -370,12 +672,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Usuarios\\UsuarioResponse.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T02:25:38.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T02:25:38.288Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 20,
               "Title": "CambiarContrasenaUsuarioRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Usuarios\\CambiarContrasenaUsuarioRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Usuarios\\CambiarContrasenaUsuarioRequest.cs",
@@ -383,12 +684,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Usuarios\\CambiarContrasenaUsuarioRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T02:24:33.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T02:24:33.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
               "Title": "ActualizarUsuarioRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Usuarios\\ActualizarUsuarioRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Usuarios\\ActualizarUsuarioRequest.cs",
@@ -396,12 +696,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Usuarios\\ActualizarUsuarioRequest.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T02:23:37.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T02:23:37.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 22,
               "Title": "CrearUsuarioRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Usuarios\\CrearUsuarioRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Usuarios\\CrearUsuarioRequest.cs",
@@ -409,12 +708,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Usuarios\\CrearUsuarioRequest.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAxwAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T02:22:23.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T02:22:23.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 23,
               "Title": "ReportesController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\ReportesController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\ReportesController.cs",
@@ -422,12 +720,11 @@
               "RelativeToolTip": "Heladeria.Api\\Controllers\\ReportesController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAUwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T01:51:57.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T01:51:57.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 24,
               "Title": "VentasEmpleadoReporteResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Reportes\\VentasEmpleadoReporteResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Reportes\\VentasEmpleadoReporteResponse.cs",
@@ -435,12 +732,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Reportes\\VentasEmpleadoReporteResponse.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAcwBYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T01:50:41.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T01:50:41.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 25,
               "Title": "ReporteVentasResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Reportes\\ReporteVentasResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Reportes\\ReporteVentasResponse.cs",
@@ -448,12 +744,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Reportes\\ReporteVentasResponse.cs",
               "ViewState": "AgIAABcAAAAAAAAAAADwvxoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T01:49:00.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T01:49:00.987Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 31,
               "Title": "CajasController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\CajasController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\CajasController.cs",
@@ -461,12 +756,11 @@
               "RelativeToolTip": "Heladeria.Api\\Controllers\\CajasController.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAuwAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:32:51.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:32:51.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 30,
               "Title": "HeladeriaDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Data\\HeladeriaDbContext.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Data\\HeladeriaDbContext.cs",
@@ -474,12 +768,11 @@
               "RelativeToolTip": "Heladeria.Api\\Data\\HeladeriaDbContext.cs",
               "ViewState": "AgIAAOMBAAAAAAAAAAAowPgBAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T22:50:35.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-13T22:50:35.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 29,
               "Title": "ArticuloInventario.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\ArticuloInventario.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\ArticuloInventario.cs",
@@ -487,12 +780,11 @@
               "RelativeToolTip": "Heladeria.Api\\Entities\\ArticuloInventario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T18:07:54.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T18:07:54.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 28,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\Categoria.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\Categoria.cs",
@@ -500,12 +792,11 @@
               "RelativeToolTip": "Heladeria.Api\\Entities\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T20:12:09.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T20:12:09.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 27,
               "Title": "DetalleVenta.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\DetalleVenta.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\DetalleVenta.cs",
@@ -513,12 +804,11 @@
               "RelativeToolTip": "Heladeria.Api\\Entities\\DetalleVenta.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAA+wAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T13:52:35.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T13:52:35.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Program.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Program.cs",
@@ -526,12 +816,11 @@
               "RelativeToolTip": "Heladeria.Api\\Program.cs",
               "ViewState": "AgIAAKIAAAAAAAAAAAAAALQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T22:54:50.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-13T22:54:50.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 32,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\AuthController.cs",
@@ -539,12 +828,11 @@
               "RelativeToolTip": "Heladeria.Api\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAL8AAAAAAAAAAAAUwCEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-13T23:42:30.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-13T23:42:30.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 33,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\AdminController.cs",
@@ -552,12 +840,11 @@
               "RelativeToolTip": "Heladeria.Api\\Controllers\\AdminController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAgwIsAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T19:56:47.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T19:56:47.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 34,
               "Title": "VentasController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\VentasController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\VentasController.cs",
@@ -565,12 +852,11 @@
               "RelativeToolTip": "Heladeria.Api\\Controllers\\VentasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:42:05.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:42:05.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 37,
               "Title": "ActualizarCajaRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Cajas\\ActualizarCajaRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Cajas\\ActualizarCajaRequest.cs",
@@ -578,12 +864,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Cajas\\ActualizarCajaRequest.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAiwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:30:49.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:30:49.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 36,
               "Title": "CajaResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Cajas\\CajaResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Cajas\\CajaResponse.cs",
@@ -591,12 +876,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Cajas\\CajaResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:31:35.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:31:35.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 38,
               "Title": "CrearCajaRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Cajas\\CrearCajaRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Cajas\\CrearCajaRequest.cs",
@@ -604,12 +888,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Cajas\\CrearCajaRequest.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:29:38.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:29:38.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 35,
               "Title": "Venta.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\Venta.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\Venta.cs",
@@ -617,12 +900,11 @@
               "RelativeToolTip": "Heladeria.Api\\Entities\\Venta.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAA7wAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T13:51:51.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T13:51:51.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 39,
               "Title": "RecetasController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\RecetasController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\RecetasController.cs",
@@ -630,12 +912,11 @@
               "RelativeToolTip": "Heladeria.Api\\Controllers\\RecetasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:16:35.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:16:35.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 40,
               "Title": "CrearVentaDetalleRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Ventas\\CrearVentaDetalleRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Ventas\\CrearVentaDetalleRequest.cs",
@@ -643,12 +924,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Ventas\\CrearVentaDetalleRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:00:50.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:00:50.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 41,
               "Title": "CrearVentaRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Ventas\\CrearVentaRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Ventas\\CrearVentaRequest.cs",
@@ -656,12 +936,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Ventas\\CrearVentaRequest.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAywBEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:01:50.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:01:50.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 44,
               "Title": "PagoResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Ventas\\PagoResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Ventas\\PagoResponse.cs",
@@ -669,12 +948,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Ventas\\PagoResponse.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:03:52.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:03:52.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 43,
               "Title": "VentaDetalleResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Ventas\\VentaDetalleResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Ventas\\VentaDetalleResponse.cs",
@@ -682,12 +960,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Ventas\\VentaDetalleResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:03:03.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:03:03.753Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 42,
               "Title": "VentaResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Ventas\\VentaResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Ventas\\VentaResponse.cs",
@@ -695,12 +972,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Ventas\\VentaResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:04:37.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:04:37.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 45,
               "Title": "RecetaResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Recetas\\RecetaResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Recetas\\RecetaResponse.cs",
@@ -708,12 +984,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Recetas\\RecetaResponse.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAowBcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:07:14.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:07:14.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 46,
               "Title": "ActualizarRecetaRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Recetas\\ActualizarRecetaRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Recetas\\ActualizarRecetaRequest.cs",
@@ -721,12 +996,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Recetas\\ActualizarRecetaRequest.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAUwBIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T14:05:57.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T14:05:57.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 47,
               "Title": "RecetaDetalle.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\RecetaDetalle.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\RecetaDetalle.cs",
@@ -734,12 +1008,11 @@
               "RelativeToolTip": "Heladeria.Api\\Entities\\RecetaDetalle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T13:54:11.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T13:54:11.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 48,
               "Title": "Pago.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\Pago.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\Pago.cs",
@@ -747,12 +1020,11 @@
               "RelativeToolTip": "Heladeria.Api\\Entities\\Pago.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T13:53:20.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T13:53:20.048Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 49,
               "Title": "Caja.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\Caja.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\Caja.cs",
@@ -760,12 +1032,11 @@
               "RelativeToolTip": "Heladeria.Api\\Entities\\Caja.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T13:51:16.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T13:51:16.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 52,
               "Title": "RegistrarAjusteInventarioRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Inventario\\RegistrarAjusteInventarioRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Inventario\\RegistrarAjusteInventarioRequest.cs",
@@ -773,12 +1044,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Inventario\\RegistrarAjusteInventarioRequest.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAowCQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T13:19:19.076Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T13:19:19.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 50,
               "Title": "RegistrarMermaRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Inventario\\RegistrarMermaRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Inventario\\RegistrarMermaRequest.cs",
@@ -786,12 +1056,11 @@
               "RelativeToolTip": "Heladeria.Contracts\\Inventario\\RegistrarMermaRequest.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAcwBEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T13:17:23.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-17T13:17:23.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 55,
               "Title": "MovimientoInventario.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\MovimientoInventario.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\MovimientoInventario.cs",
@@ -803,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 56,
               "Title": "LoteInventario.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\LoteInventario.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\LoteInventario.cs",
@@ -815,7 +1084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 51,
               "Title": "InventarioController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\InventarioController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\InventarioController.cs",
@@ -823,12 +1092,11 @@
               "RelativeToolTip": "Heladeria.Api\\Controllers\\InventarioController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAANYCAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T18:16:31.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T18:16:31.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 54,
               "Title": "RecepcionarCompraRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Compras\\RecepcionarCompraRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Compras\\RecepcionarCompraRequest.cs",
@@ -840,7 +1108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 53,
               "Title": "ComprasController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\ComprasController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\ComprasController.cs",
@@ -848,12 +1116,11 @@
               "RelativeToolTip": "Heladeria.Api\\Controllers\\ComprasController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T20:16:18.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T20:16:18.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 57,
               "Title": "CompraResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Compras\\CompraResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Compras\\CompraResponse.cs",
@@ -865,7 +1132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 58,
               "Title": "CompraDetalleResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Compras\\CompraDetalleResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Compras\\CompraDetalleResponse.cs",
@@ -877,7 +1144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 59,
               "Title": "CrearCompraRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Compras\\CrearCompraRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Compras\\CrearCompraRequest.cs",
@@ -889,7 +1156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 60,
               "Title": "CrearCompraDetalleRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Compras\\CrearCompraDetalleRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Compras\\CrearCompraDetalleRequest.cs",
@@ -901,7 +1168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 61,
               "Title": "ProveedoresController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\ProveedoresController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\ProveedoresController.cs",
@@ -913,7 +1180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 62,
               "Title": "ProveedorResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Proveedores\\ProveedorResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Proveedores\\ProveedorResponse.cs",
@@ -925,7 +1192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 63,
               "Title": "ProveedorRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Proveedores\\ProveedorRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Proveedores\\ProveedorRequest.cs",
@@ -937,7 +1204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 64,
               "Title": "CompraDetalle.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\CompraDetalle.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\CompraDetalle.cs",
@@ -949,7 +1216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 65,
               "Title": "Compra.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\Compra.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\Compra.cs",
@@ -961,7 +1228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 66,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\Proveedor.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\Proveedor.cs",
@@ -973,7 +1240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 67,
               "Title": "ExistenciaInventarioResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Inventario\\ExistenciaInventarioResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Inventario\\ExistenciaInventarioResponse.cs",
@@ -985,7 +1252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 68,
               "Title": "ArticuloInventarioResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Inventario\\ArticuloInventarioResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Inventario\\ArticuloInventarioResponse.cs",
@@ -997,7 +1264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 69,
               "Title": "CrearArticuloInventarioRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Inventario\\CrearArticuloInventarioRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Inventario\\CrearArticuloInventarioRequest.cs",
@@ -1009,7 +1276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 70,
               "Title": "ExistenciaInventario.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\ExistenciaInventario.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\ExistenciaInventario.cs",
@@ -1021,7 +1288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 71,
               "Title": "UnidadMedida.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\UnidadMedida.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\UnidadMedida.cs",
@@ -1033,7 +1300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 74,
               "Title": "ProductosController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\ProductosController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\ProductosController.cs",
@@ -1045,7 +1312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 73,
               "Title": "CrearPresentacionRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Productos\\CrearPresentacionRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Productos\\CrearPresentacionRequest.cs",
@@ -1057,7 +1324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 77,
               "Title": "PresentacionResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Productos\\PresentacionResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Productos\\PresentacionResponse.cs",
@@ -1069,7 +1336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 78,
               "Title": "ProductoResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Productos\\ProductoResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Productos\\ProductoResponse.cs",
@@ -1081,7 +1348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 72,
               "Title": "ActualizarPresentacionRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Productos\\ActualizarPresentacionRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Productos\\ActualizarPresentacionRequest.cs",
@@ -1093,7 +1360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 76,
               "Title": "CrearProductoRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Productos\\CrearProductoRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Productos\\CrearProductoRequest.cs",
@@ -1105,7 +1372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 75,
               "Title": "CatalogoVentaResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Productos\\CatalogoVentaResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Productos\\CatalogoVentaResponse.cs",
@@ -1117,7 +1384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 79,
               "Title": "ActualizarProductoRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Productos\\ActualizarProductoRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Productos\\ActualizarProductoRequest.cs",
@@ -1129,7 +1396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 80,
               "Title": "CategoriasController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\CategoriasController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\CategoriasController.cs",
@@ -1141,7 +1408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 81,
               "Title": "CategoriaResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Categorias\\CategoriaResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Categorias\\CategoriaResponse.cs",
@@ -1153,7 +1420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 82,
               "Title": "ActualizarCategoriaRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Categorias\\ActualizarCategoriaRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Categorias\\ActualizarCategoriaRequest.cs",
@@ -1165,7 +1432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 83,
               "Title": "CrearCategoriaRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Categorias\\CrearCategoriaRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Categorias\\CrearCategoriaRequest.cs",
@@ -1177,7 +1444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 84,
               "Title": "ProductoPresentacion.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\ProductoPresentacion.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\ProductoPresentacion.cs",
@@ -1189,7 +1456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 85,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\Producto.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\Producto.cs",
@@ -1201,7 +1468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 86,
               "Title": "ResumenVentasUsuarioDia.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\ResumenVentasUsuarioDia.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\ResumenVentasUsuarioDia.cs",
@@ -1213,7 +1480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 87,
               "Title": "HistorialSesion.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\HistorialSesion.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\HistorialSesion.cs",
@@ -1225,7 +1492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 89,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Auth\\LoginResponse.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Auth\\LoginResponse.cs",
@@ -1237,7 +1504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 90,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Auth\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Auth\\LoginRequest.cs",
@@ -1249,7 +1516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 88,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\AppData\\Roaming\\Microsoft\\UserSecrets\\e3555ce1-c8a2-4ceb-b1ed-3239497cb024\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\e3555ce1-c8a2-4ceb-b1ed-3239497cb024\\secrets.json",
@@ -1261,7 +1528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 91,
               "Title": "DiagnosticoController.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Controllers\\DiagnosticoController.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Controllers\\DiagnosticoController.cs",
@@ -1273,7 +1540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 92,
               "Title": "SesionUsuario.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\SesionUsuario.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\SesionUsuario.cs",
@@ -1285,7 +1552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 93,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Entities\\Usuario.cs",
               "RelativeDocumentMoniker": "Heladeria.Api\\Entities\\Usuario.cs",
@@ -1297,7 +1564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 94,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\appsettings.json",
               "RelativeDocumentMoniker": "Heladeria.Api\\appsettings.json",
@@ -1309,7 +1576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 95,
               "Title": "Heladeria.Contracts.csproj",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Heladeria.Contracts.csproj",
               "RelativeDocumentMoniker": "Heladeria.Contracts\\Heladeria.Contracts.csproj",
@@ -1317,11 +1584,12 @@
               "RelativeToolTip": "Heladeria.Contracts\\Heladeria.Contracts.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-11T19:25:18.834Z"
+              "WhenOpened": "2026-10-11T19:25:18.834Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 96,
               "Title": "Heladeria.Api.csproj",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Api\\Heladeria.Api.csproj",
               "RelativeDocumentMoniker": "Heladeria.Api\\Heladeria.Api.csproj",
@@ -1329,22 +1597,24 @@
               "RelativeToolTip": "Heladeria.Api\\Heladeria.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-11T19:24:19.709Z"
+              "WhenOpened": "2026-10-11T19:24:19.709Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 97,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Heladeria.Desktop\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\MainWindow.xaml",
               "RelativeToolTip": "Heladeria.Desktop\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-11T19:18:58.593Z"
+              "WhenOpened": "2026-10-11T19:18:58.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 98,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Heladeria.Desktop\\MainWindow.xaml.cs",

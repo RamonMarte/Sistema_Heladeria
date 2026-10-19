@@ -18,3 +18,16 @@ C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desk
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Heladeria.Desktop.pdb
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Heladeria.Desktop.genruntimeconfig.cache
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\ref\Heladeria.Desktop.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\bin\Debug\net10.0-windows\Newtonsoft.Json.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\bin\Debug\net10.0-windows\Stripe.net.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\bin\Debug\net10.0-windows\Heladeria.Contracts.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\bin\Debug\net10.0-windows\Heladeria.Contracts.pdb
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Heladeria.Desktop.csproj.AssemblyReference.cache
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\DashboardWindow.g.cs
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\LoginWindow.g.cs
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\DashboardWindow.baml
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\LoginWindow.baml
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Heladeria.Desktop.sourcelink.json
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Heladeri.8F1E2202.Up2Date
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\PuntoVentaWindow.g.cs
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\PuntoVentaWindow.baml

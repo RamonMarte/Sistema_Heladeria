@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "Heladeria.Api\\Heladeria.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Heladeria.Desktop\\Heladeria.Desktop.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

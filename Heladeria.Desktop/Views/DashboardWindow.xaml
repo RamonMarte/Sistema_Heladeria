@@ -1,0 +1,161 @@
+﻿<Window x:Class="Heladeria.Desktop.Views.DashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Heladeria.Desktop.Views"
+        mc:Ignorable="d"
+        Title="Heladería | Panel principal"
+        Height="620"
+        Width="1050"
+        MinHeight="550"
+        MinWidth="850"
+        WindowStartupLocation="CenterScreen"
+        Background="#F4F6FA"
+        Closing="Window_Closing">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Background="#183B56" Padding="24,14">
+            <DockPanel>
+                <TextBlock Text="HELADERÍA"
+                           FontSize="22"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           VerticalAlignment="Center"/>
+
+                <Button Content="Cerrar sesión"
+                        DockPanel.Dock="Right"
+                        Width="130"
+                        Height="38"
+                        Click="CerrarSesion_Click"
+                        Background="#FFFFFF"
+                        Foreground="#183B56"
+                        BorderThickness="0"
+                        FontWeight="SemiBold"
+                        Cursor="Hand"/>
+            </DockPanel>
+        </Border>
+
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="32">
+                <TextBlock x:Name="TextoBienvenida"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           Foreground="#1B2838"/>
+
+                <TextBlock x:Name="TextoRol"
+                           FontSize="15"
+                           Foreground="#667085"
+                           Margin="0,8,0,26"/>
+
+                <Border Background="White"
+                        CornerRadius="12"
+                        Padding="24"
+                        Margin="0,0,0,18">
+                    <StackPanel>
+                        <TextBlock Text="Sistema conectado"
+                                   FontSize="20"
+                                   FontWeight="SemiBold"
+                                   Foreground="#183B56"/>
+
+                        <TextBlock Text="Has iniciado sesión correctamente en la API de la heladería."
+                                   FontSize="14"
+                                   Foreground="#667085"
+                                   TextWrapping="Wrap"
+                                   Margin="0,10,0,0"/>
+
+                        <TextBlock x:Name="TextoAdministracion"
+                                   Text="Tienes acceso a la administración de usuarios."
+                                   FontSize="14"
+                                   Foreground="#176B75"
+                                   Margin="0,14,0,0"
+                                   Visibility="Collapsed"/>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock Text="Módulos del sistema"
+                           FontSize="20"
+                           FontWeight="SemiBold"
+                           Foreground="#1B2838"
+                           Margin="0,0,0,14"/>
+
+                <UniformGrid Columns="2">
+                    <Border Background="White"
+                            CornerRadius="10"
+                            Margin="0,0,10,10"
+                            Padding="20">
+                        <StackPanel>
+                            <TextBlock Text="Punto de venta"
+                                       FontSize="17"
+                                       FontWeight="SemiBold"/>
+                            <TextBlock Text="Buscar productos, preparar el carrito y cobrar."
+                                       TextWrapping="Wrap"
+                                       Foreground="#667085"
+                                       Margin="0,8,0,0"/>
+                            <Button Content="Abrir punto de venta"
+                                    Click="AbrirPuntoVenta_Click"
+                                    Height="38"
+                                    Margin="0,14,0,0"
+                                    Background="#176B75"
+                                    Foreground="White"
+                                    BorderThickness="0"
+                                    Cursor="Hand"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="White"
+                            CornerRadius="10"
+                            Margin="0,0,0,10"
+                            Padding="20">
+                        <StackPanel>
+                            <TextBlock Text="Productos y precios"
+                                       FontSize="17"
+                                       FontWeight="SemiBold"/>
+                            <TextBlock Text="Administrar categorías, presentaciones y precios."
+                                       TextWrapping="Wrap"
+                                       Foreground="#667085"
+                                       Margin="0,8,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="White"
+                            CornerRadius="10"
+                            Margin="0,0,10,0"
+                            Padding="20">
+                        <StackPanel>
+                            <TextBlock Text="Inventario y compras"
+                                       FontSize="17"
+                                       FontWeight="SemiBold"/>
+                            <TextBlock Text="Consultar existencias, proveedores, lotes y mermas."
+                                       TextWrapping="Wrap"
+                                       Foreground="#667085"
+                                       Margin="0,8,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border x:Name="TarjetaAdministracion"
+                            Background="White"
+                            CornerRadius="10"
+                            Padding="20">
+                        
+                        <StackPanel>
+                            <TextBlock Text="Administración y reportes"
+                                       FontSize="17"
+                                       FontWeight="SemiBold"/>
+                            <TextBlock Text="Usuarios, sesiones e informes de ventas."
+                                       TextWrapping="Wrap"
+                                       Foreground="#667085"
+                                       Margin="0,8,0,0"/>
+                        </StackPanel>
+                    </Border>
+                </UniformGrid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
