@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "27hEgv04Rbs=",
+  "dgSpecHash": "cRXRpzJ2WNc=",
   "success": true,
   "projectFilePath": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Contracts\\Heladeria.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Elizabeth\\.nuget\\packages\\questpdf\\2026.9.1\\questpdf.2026.9.1.nupkg.sha512"
+  ],
   "logs": []
 }

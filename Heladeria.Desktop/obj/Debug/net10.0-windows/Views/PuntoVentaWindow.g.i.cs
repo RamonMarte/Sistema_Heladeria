@@ -53,7 +53,7 @@ namespace Heladeria.Desktop.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Heladeria.Desktop;V1.0.0.0;component/views/puntoventawindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Heladeria.Desktop;component/views/puntoventawindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\PuntoVentaWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "kMydwGfQr6A=",
+  "dgSpecHash": "yA0S3WeR/fw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Elizabeth\\Documents\\Rafiki\\Proyecto_Millonario\\Heladeria\\Heladeria.Desktop\\Heladeria.Desktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elizabeth\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Elizabeth\\.nuget\\packages\\nuget.common\\7.9.0\\nuget.common.7.9.0.nupkg.sha512",
+    "C:\\Users\\Elizabeth\\.nuget\\packages\\nuget.configuration\\7.9.0\\nuget.configuration.7.9.0.nupkg.sha512",
+    "C:\\Users\\Elizabeth\\.nuget\\packages\\nuget.frameworks\\7.9.0\\nuget.frameworks.7.9.0.nupkg.sha512",
+    "C:\\Users\\Elizabeth\\.nuget\\packages\\nuget.packaging\\7.9.0\\nuget.packaging.7.9.0.nupkg.sha512",
+    "C:\\Users\\Elizabeth\\.nuget\\packages\\nuget.versioning\\7.9.0\\nuget.versioning.7.9.0.nupkg.sha512",
+    "C:\\Users\\Elizabeth\\.nuget\\packages\\questpdf\\2026.9.1\\questpdf.2026.9.1.nupkg.sha512",
     "C:\\Users\\Elizabeth\\.nuget\\packages\\stripe.net\\53.0.0\\stripe.net.53.0.0.nupkg.sha512"
   ],
   "logs": []

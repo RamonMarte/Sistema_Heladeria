@@ -1,0 +1,654 @@
+﻿<Window x:Class="Heladeria.Desktop.Views.ReportesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Heladeria.Desktop.Views"
+        mc:Ignorable="d"
+        Title="Reportes y estadísticas"
+        Height="850"
+        Width="1250"
+        MinHeight="700"
+        MinWidth="1000"
+        WindowStartupLocation="CenterScreen"
+        Background="#F3F6FA">
+
+    <Window.Resources>
+
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Foreground" Value="#243047"/>
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Padding" Value="14,9"/>
+            <Setter Property="Background" Value="#2563EB"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style TargetType="{x:Type DataGrid}">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E2E8F0"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="RowHeight" Value="38"/>
+            <Setter Property="ColumnHeaderHeight" Value="40"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="AlternationCount" Value="2"/>
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Margin="22">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- ENCABEZADO -->
+
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel>
+                <TextBlock Text="Reportes y estadísticas"
+                           FontSize="27"
+                           FontWeight="Bold"/>
+
+                <TextBlock Text="Resumen de ventas y rendimiento del negocio"
+                           Foreground="#64748B"
+                           FontSize="13"
+                           Margin="0,5,0,0"/>
+            </StackPanel>
+
+            <Button Grid.Column="1"
+                    Content="← Volver al menú"
+                    Background="#E2E8F0"
+                    Foreground="#243047"
+                    Click="Volver_Click"
+                    VerticalAlignment="Center"/>
+
+        </Grid>
+
+        <!-- FILTROS -->
+
+        <Border Grid.Row="1"
+                Background="White"
+                BorderBrush="#E2E8F0"
+                BorderThickness="1"
+                CornerRadius="10"
+                Padding="16"
+                Margin="0,18,0,16">
+
+            <StackPanel>
+
+                <TextBlock Text="Filtros del reporte"
+                           FontSize="16"
+                           FontWeight="SemiBold"
+                           Margin="0,0,0,12"/>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- PERÍODO -->
+
+                    <StackPanel Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="0,0,12,12">
+
+                        <TextBlock Text="Período"
+                                   Margin="0,0,0,5"/>
+
+                        <ComboBox ItemsSource="{Binding PeriodosDisponibles}"
+                                  SelectedItem="{Binding PeriodoSeleccionado}"
+                                  Height="34"
+                                  VerticalContentAlignment="Center"/>
+
+                    </StackPanel>
+
+                    <!-- FECHA INICIAL -->
+
+                    <StackPanel Grid.Row="0"
+                                Grid.Column="1"
+                                Margin="0,0,12,12">
+
+                        <TextBlock Text="Desde"/>
+
+                        <DatePicker SelectedDate="{Binding FechaDesde}"
+                                    Height="34"
+                                    Margin="0,5,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- FECHA FINAL -->
+
+                    <StackPanel Grid.Row="0"
+                                Grid.Column="2"
+                                Margin="0,0,12,12">
+
+                        <TextBlock Text="Hasta"/>
+
+                        <DatePicker SelectedDate="{Binding FechaHasta}"
+                                    Height="34"
+                                    Margin="0,5,0,0"/>
+
+                    </StackPanel>
+
+                    <!-- USUARIO -->
+
+                    <StackPanel Grid.Row="0"
+                                Grid.Column="3"
+                                Margin="0,0,0,12">
+
+                        <TextBlock Text="ID del empleado"/>
+
+                        <TextBox Text="{Binding UsuarioIdFiltro,
+                                                UpdateSourceTrigger=PropertyChanged}"
+                                 Height="34"
+                                 Padding="7"
+                                 Margin="0,5,0,0"
+                                 VerticalContentAlignment="Center"
+                                 ToolTip="Déjalo vacío para consultar todos los empleados"/>
+
+                    </StackPanel>
+
+                    <!-- PRESENTACIÓN -->
+
+                    <StackPanel Grid.Row="1"
+                                Grid.Column="0"
+                                Margin="0,0,12,0">
+
+                        <TextBlock Text="ID de presentación"/>
+
+                        <TextBox Text="{Binding ProductoPresentacionIdFiltro,
+                                                UpdateSourceTrigger=PropertyChanged}"
+                                 Height="34"
+                                 Padding="7"
+                                 Margin="0,5,0,0"
+                                 VerticalContentAlignment="Center"
+                                 ToolTip="Déjalo vacío para consultar todos los productos"/>
+
+                    </StackPanel>
+
+                    <!-- CAJA -->
+
+                    <StackPanel Grid.Row="1"
+                                Grid.Column="1"
+                                Margin="0,0,12,0">
+
+                        <TextBlock Text="ID de caja"/>
+
+                        <TextBox Text="{Binding CajaIdFiltro,
+                                                UpdateSourceTrigger=PropertyChanged}"
+                                 Height="34"
+                                 Padding="7"
+                                 Margin="0,5,0,0"
+                                 VerticalContentAlignment="Center"
+                                 ToolTip="Déjalo vacío para consultar todas las cajas"/>
+
+                    </StackPanel>
+
+                    <!-- BOTÓN -->
+
+                    <StackPanel Grid.Row="1"
+                                Grid.Column="3"
+                                VerticalAlignment="Bottom">
+
+                        <Button Content="Actualizar reportes"
+                                Height="36"
+                                Command="{Binding CargarCommand}"/>
+
+                        <Button Content="Exportar a PDF"
+                                Height="36"
+                                Margin="0,7,0,0"
+                                Background="#0F766E"
+                                Click="ExportarPdf_Click"/>
+
+                    </StackPanel>
+
+                </Grid>
+
+            </StackPanel>
+
+        </Border>
+
+        <!-- INDICADORES -->
+
+        <UniformGrid Grid.Row="2"
+                     Columns="4"
+                     Margin="0,0,0,16">
+
+            <Border Background="White"
+                    BorderBrush="#E2E8F0"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Padding="16"
+                    Margin="0,0,10,0">
+
+                <StackPanel>
+
+                    <TextBlock Text="INGRESOS (RD$)"
+                               FontSize="11"
+                               FontWeight="SemiBold"
+                               Foreground="#64748B"/>
+
+                    <TextBlock Text="{Binding ImporteTotalTickets,
+                                              StringFormat={}{0:N2}}"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Margin="0,8,0,0"/>
+
+                    <TextBlock Text="Importe total de las ventas"
+                               FontSize="11"
+                               Foreground="#64748B"/>
+
+                </StackPanel>
+
+            </Border>
+
+            <Border Background="White"
+                    BorderBrush="#E2E8F0"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Padding="16"
+                    Margin="0,0,10,0">
+
+                <StackPanel>
+
+                    <TextBlock Text="TRANSACCIONES"
+                               FontSize="11"
+                               FontWeight="SemiBold"
+                               Foreground="#64748B"/>
+
+                    <TextBlock Text="{Binding CantidadTransacciones,
+                                              StringFormat={}{0:N0}}"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Margin="0,8,0,0"/>
+
+                    <TextBlock Text="Ventas registradas"
+                               FontSize="11"
+                               Foreground="#64748B"/>
+
+                </StackPanel>
+
+            </Border>
+
+            <Border Background="White"
+                    BorderBrush="#E2E8F0"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Padding="16"
+                    Margin="0,0,10,0">
+
+                <StackPanel>
+
+                    <TextBlock Text="UNIDADES VENDIDAS"
+                               FontSize="11"
+                               FontWeight="SemiBold"
+                               Foreground="#64748B"/>
+
+                    <TextBlock Text="{Binding UnidadesVendidas,
+                                              StringFormat={}{0:N3}}"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Margin="0,8,0,0"/>
+
+                    <TextBlock Text="Cantidad total de productos"
+                               FontSize="11"
+                               Foreground="#64748B"/>
+
+                </StackPanel>
+
+            </Border>
+
+            <Border Background="White"
+                    BorderBrush="#E2E8F0"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Padding="16">
+
+                <StackPanel>
+
+                    <TextBlock Text="GANANCIA ESTIMADA (RD$)"
+                               FontSize="11"
+                               FontWeight="SemiBold"
+                               Foreground="#64748B"/>
+
+                    <TextBlock Text="{Binding GananciaBrutaEstimada,
+                                              StringFormat={}{0:N2}}"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Margin="0,8,0,0"/>
+
+                    <TextBlock Text="Ingresos menos costo estimado"
+                               FontSize="11"
+                               Foreground="#64748B"/>
+
+                </StackPanel>
+
+            </Border>
+
+        </UniformGrid>
+
+        <!-- TABLAS DE REPORTES -->
+
+        <TabControl Grid.Row="3"
+                    Background="White"
+                    BorderBrush="#E2E8F0"
+                    Padding="5"
+                    Margin="0,0,0,12">
+
+            <!-- MÉTODOS DE PAGO -->
+
+            <TabItem Header="Métodos de pago">
+
+                <DataGrid ItemsSource="{Binding PagosPorMetodo}"
+                          Margin="5">
+
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="Método de pago"
+                                            Binding="{Binding MetodoPago}"
+                                            Width="*"/>
+
+                        <DataGridTextColumn Header="Cantidad de pagos"
+                                            Binding="{Binding CantidadPagos,
+                                                              StringFormat={}{0:N0}}"
+                                            Width="180"/>
+
+                        <DataGridTextColumn Header="Importe (RD$)"
+                                            Binding="{Binding Importe,
+                                                              StringFormat={}{0:N2}}"
+                                            Width="180"/>
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
+
+            </TabItem>
+
+            <!-- PRODUCTOS MÁS VENDIDOS -->
+
+            <TabItem Header="Productos más vendidos">
+
+                <DataGrid ItemsSource="{Binding ProductosMasVendidos}"
+                          Margin="5">
+
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="Producto"
+                                            Binding="{Binding NombreProducto}"
+                                            Width="*"/>
+
+                        <DataGridTextColumn Header="Presentación"
+                                            Binding="{Binding NombrePresentacion}"
+                                            Width="*"/>
+
+                        <DataGridTextColumn Header="Cantidad"
+                                            Binding="{Binding CantidadVendida,
+                                                              StringFormat={}{0:N3}}"
+                                            Width="100"/>
+
+                        <DataGridTextColumn Header="Importe (RD$)"
+                                            Binding="{Binding Importe,
+                                                              StringFormat={}{0:N2}}"
+                                            Width="140"/>
+
+                        <DataGridTextColumn Header="Costo (RD$)"
+                                            Binding="{Binding CostoEstimado,
+                                                              StringFormat={}{0:N2}}"
+                                            Width="140"/>
+
+                        <DataGridTextColumn Header="Ganancia (RD$)"
+                                            Binding="{Binding GananciaBrutaEstimada,
+                                                              StringFormat={}{0:N2}}"
+                                            Width="150"/>
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
+
+            </TabItem>
+
+            <!-- VENTAS POR DÍA -->
+
+            <TabItem Header="Ventas por día">
+
+                <DataGrid ItemsSource="{Binding VentasPorDia}"
+                          Margin="5">
+
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="Fecha"
+                                            Binding="{Binding Fecha,
+                                                              StringFormat={}{0:dd/MM/yyyy}}"
+                                            Width="*"/>
+
+                        <DataGridTextColumn Header="Transacciones"
+                                            Binding="{Binding CantidadTransacciones,
+                                                              StringFormat={}{0:N0}}"
+                                            Width="200"/>
+
+                        <DataGridTextColumn Header="Importe (RD$)"
+                                            Binding="{Binding ImporteTotal,
+                                                              StringFormat={}{0:N2}}"
+                                            Width="220"/>
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
+
+            </TabItem>
+
+            <!-- VENTAS POR EMPLEADO -->
+
+            <TabItem Header="Ventas por empleado">
+
+                <DataGrid ItemsSource="{Binding VentasPorEmpleado}"
+                          Margin="5">
+
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="Nombre completo"
+                                            Binding="{Binding NombreCompleto}"
+                                            Width="*"/>
+
+                        <DataGridTextColumn Header="Usuario"
+                                            Binding="{Binding NombreUsuario}"
+                                            Width="130"/>
+
+                        <DataGridTextColumn Header="Transacciones"
+                                            Binding="{Binding CantidadTransacciones,
+                                                              StringFormat={}{0:N0}}"
+                                            Width="120"/>
+
+                        <DataGridTextColumn Header="Unidades"
+                                            Binding="{Binding UnidadesVendidas,
+                                                              StringFormat={}{0:N3}}"
+                                            Width="100"/>
+
+                        <DataGridTextColumn Header="Ingresos (RD$)"
+                                            Binding="{Binding ImporteTotalTickets,
+                                                              StringFormat={}{0:N2}}"
+                                            Width="140"/>
+
+                        <DataGridTextColumn Header="Costo (RD$)"
+                                            Binding="{Binding CostoEstimadoProductos,
+                                                              StringFormat={}{0:N2}}"
+                                            Width="140"/>
+
+                        <DataGridTextColumn Header="Ganancia (RD$)"
+                                            Binding="{Binding GananciaBrutaEstimada,
+                                                              StringFormat={}{0:N2}}"
+                                            Width="150"/>
+
+                    </DataGrid.Columns>
+
+                </DataGrid>
+
+            </TabItem>
+
+            <TabItem Header="Gráficos">
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  Padding="18">
+
+                    <StackPanel>
+
+                        <TextBlock Text="Ingresos por día"
+                       FontSize="19"
+                       FontWeight="Bold"
+                       Margin="0,0,0,16"/>
+
+                        <ItemsControl ItemsSource="{Binding VentasPorDia}">
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+
+                                    <Grid Margin="0,0,0,14">
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="105"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="150"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Text="{Binding Fecha,
+                                              StringFormat={}{0:dd/MM/yyyy}}"
+                                       VerticalAlignment="Center"/>
+
+                                        <ProgressBar Grid.Column="1"
+                                         Minimum="0"
+                                         Value="{Binding ImporteTotal}"
+                                         Maximum="{Binding DataContext.MaximoImportePorDia,
+                                             RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                         Height="22"
+                                         VerticalAlignment="Center"
+                                         Foreground="#2563EB"
+                                         Background="#E2E8F0"/>
+
+                                        <TextBlock Grid.Column="2"
+                                       Text="{Binding ImporteTotal,
+                                              StringFormat={}{0:N2} RD$}"
+                                       HorizontalAlignment="Right"
+                                       VerticalAlignment="Center"
+                                       Margin="12,0,0,0"
+                                       FontWeight="SemiBold"/>
+
+                                    </Grid>
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+
+                        <Separator Margin="0,15,0,22"/>
+
+                        <TextBlock Text="Productos más vendidos por importe"
+                       FontSize="19"
+                       FontWeight="Bold"
+                       Margin="0,0,0,16"/>
+
+                        <ItemsControl ItemsSource="{Binding ProductosMasVendidos}">
+
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+
+                                    <Grid Margin="0,0,0,16">
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="250"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="150"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <StackPanel VerticalAlignment="Center">
+
+                                            <TextBlock Text="{Binding NombreProducto}"
+                                           FontWeight="SemiBold"/>
+
+                                            <TextBlock Text="{Binding NombrePresentacion}"
+                                           Foreground="#64748B"
+                                           FontSize="12"
+                                           Margin="0,3,0,0"/>
+
+                                        </StackPanel>
+
+                                        <ProgressBar Grid.Column="1"
+                                         Minimum="0"
+                                         Value="{Binding Importe}"
+                                         Maximum="{Binding DataContext.MaximoImporteProducto,
+                                             RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                         Height="22"
+                                         VerticalAlignment="Center"
+                                         Foreground="#0D9488"
+                                         Background="#E2E8F0"/>
+
+                                        <TextBlock Grid.Column="2"
+                                       Text="{Binding Importe,
+                                              StringFormat={}{0:N2} RD$}"
+                                       HorizontalAlignment="Right"
+                                       VerticalAlignment="Center"
+                                       Margin="12,0,0,0"
+                                       FontWeight="SemiBold"/>
+
+                                    </Grid>
+
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+
+                        </ItemsControl>
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </TabItem>
+
+        </TabControl>
+
+        <!-- ESTADO Y AVISO -->
+
+        <StackPanel Grid.Row="4">
+
+            <TextBlock Text="{Binding Mensaje}"
+                       Foreground="#2563EB"
+                       TextWrapping="Wrap"
+                       Margin="0,0,0,5"/>
+
+            <TextBlock Text="Importante: los costos y las ganancias se muestran según los cálculos de la API. Comprueba los costos registrados antes de tomar decisiones financieras."
+                       FontSize="11"
+                       Foreground="#64748B"
+                       TextWrapping="Wrap"/>
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>

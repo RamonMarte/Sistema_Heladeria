@@ -9,4 +9,7 @@ C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Cont
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\refint\Heladeria.Contracts.dll
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.pdb
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\ref\Heladeria.Contracts.dll
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.sourcelink.json
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\bin\Debug\net10.0\QuestPDF.Fonts.Lato.br
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeria.Contracts.csproj.AssemblyReference.cache
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Contracts\obj\Debug\net10.0\Heladeri.52B5F3FC.Up2Date

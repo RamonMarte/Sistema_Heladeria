@@ -1,0 +1,320 @@
+﻿<Window x:Class="Heladeria.Desktop.Views.UsuariosWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Heladeria.Desktop.Views"
+        mc:Ignorable="d"
+        Title="Heladería | Administración de usuarios"
+        Height="760"
+        Width="1250"
+        MinHeight="650"
+        MinWidth="1050"
+        WindowStartupLocation="CenterScreen"
+        Background="#F3F5F9"
+        Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <Style x:Key="CampoTexto" TargetType="TextBox">
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="BorderBrush" Value="#D6DCE5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="CampoContrasena" TargetType="PasswordBox">
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="BorderBrush" Value="#D6DCE5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="BotonPrincipal" TargetType="Button">
+            <Setter Property="Background" Value="#176B75"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="12,9"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="RowHeight" Value="42"/>
+            <Setter Property="ColumnHeaderHeight" Value="38"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="18">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Encabezado -->
+        <Border Grid.Row="0"
+                Background="#183B56"
+                CornerRadius="12"
+                Padding="20"
+                Margin="0,0,0,16">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="Administración de usuarios"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+
+                    <TextBlock Text="Gestiona encargados y cajeros."
+                               Foreground="#D8E8F0"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <Button Grid.Column="1"
+                        Content="← Volver al menú"
+                        Click="Volver_Click"
+                        Background="White"
+                        Foreground="#183B56"
+                        BorderThickness="0"
+                        Padding="14,10"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <!-- Contenido -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="14"/>
+                <ColumnDefinition Width="0.9*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Listado -->
+            <Border Grid.Column="0"
+                    Background="White"
+                    CornerRadius="12"
+                    Padding="16">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Usuarios registrados"
+                               FontSize="19"
+                               FontWeight="SemiBold"
+                               Foreground="#1B2838"
+                               Margin="0,0,0,12"/>
+
+                    <TextBox Grid.Row="1"
+                             Style="{StaticResource CampoTexto}"
+                             Text="{Binding Buscar, UpdateSourceTrigger=PropertyChanged}"
+                             ToolTip="Buscar por nombre, usuario o rol"
+                             Margin="0,0,0,12"
+                             />
+
+                    <DataGrid Grid.Row="2"
+                              ItemsSource="{Binding Usuarios}"
+                              SelectedItem="{Binding UsuarioSeleccionado, Mode=TwoWay}">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre"
+                                                Binding="{Binding NombreCompleto}"
+                                                Width="*"/>
+
+                            <DataGridTextColumn Header="Usuario"
+                                                Binding="{Binding NombreUsuario}"
+                                                Width="100"/>
+
+                            <DataGridTextColumn Header="Rol"
+                                                Binding="{Binding Rol}"
+                                                Width="95"/>
+
+                            <DataGridCheckBoxColumn Header="Activo"
+                                                    Binding="{Binding Activo}"
+                                                    Width="60"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Border>
+
+            <!-- Formularios -->
+            <ScrollViewer Grid.Column="2"
+                          VerticalScrollBarVisibility="Auto">
+
+                <StackPanel>
+
+                    <!-- Crear usuario -->
+                    <Border Background="White"
+                            CornerRadius="12"
+                            Padding="18"
+                            Margin="0,0,0,14">
+
+                        <StackPanel>
+                            <TextBlock Text="Crear empleado"
+                                       FontSize="19"
+                                       FontWeight="SemiBold"
+                                       Foreground="#183B56"
+                                       Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Nombre completo"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource CampoTexto}"
+                                     Text="{Binding NuevoNombreCompleto, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="150"
+                                     Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Nombre de usuario"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource CampoTexto}"
+                                     Text="{Binding NuevoNombreUsuario, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="60"
+                                     Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Contraseña inicial (mínimo 12 caracteres)"
+                                       FontWeight="SemiBold"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,5"/>
+
+                            <PasswordBox x:Name="PasswordCreacion"
+                                         Style="{StaticResource CampoContrasena}"
+                                         PasswordChanged="PasswordCreacion_PasswordChanged"
+                                         MaxLength="128"
+                                         Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Rol"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding Roles}"
+                                      SelectedItem="{Binding NuevoRol}"
+                                      Height="36"
+                                      Margin="0,0,0,14"/>
+
+                            <Button Content="Crear usuario"
+                                    Command="{Binding CrearCommand}"
+                                    Style="{StaticResource BotonPrincipal}"
+                                    Height="42"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Editar usuario -->
+                    <Border Background="White"
+                            CornerRadius="12"
+                            Padding="18"
+                            Margin="0,0,0,14">
+
+                        <StackPanel>
+                            <TextBlock Text="Editar usuario seleccionado"
+                                       FontSize="18"
+                                       FontWeight="SemiBold"
+                                       Foreground="#183B56"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,8"/>
+
+                            <TextBlock Text="Selecciona un encargado o cajero del listado."
+                                       Foreground="#667085"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,14"/>
+
+                            <StackPanel IsEnabled="{Binding PuedeEditarUsuario}">
+
+                                <TextBlock Text="Nombre completo"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,5"/>
+
+                                <TextBox Style="{StaticResource CampoTexto}"
+                                         Text="{Binding NombreCompletoEdicion, UpdateSourceTrigger=PropertyChanged}"
+                                         MaxLength="150"
+                                         Margin="0,0,0,12"/>
+
+                                <TextBlock Text="Rol"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,5"/>
+
+                                <ComboBox ItemsSource="{Binding Roles}"
+                                          SelectedItem="{Binding RolEdicion}"
+                                          Height="36"
+                                          Margin="0,0,0,12"/>
+
+                                <CheckBox Content="Usuario activo"
+                                          IsChecked="{Binding ActivoEdicion}"
+                                          Margin="0,0,0,14"/>
+
+                                <Button Content="Guardar cambios"
+                                        Command="{Binding GuardarCambiosCommand}"
+                                        Style="{StaticResource BotonPrincipal}"
+                                        Height="42"/>
+                            </StackPanel>
+
+                            <TextBlock Text="La cuenta Administrador no se modifica desde esta pantalla."
+                                       Foreground="#B54708"
+                                       TextWrapping="Wrap"
+                                       Margin="0,12,0,0"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Restablecer contraseña -->
+                    <Border Background="White"
+                            CornerRadius="12"
+                            Padding="18">
+
+                        <StackPanel>
+                            <TextBlock Text="Restablecer contraseña"
+                                       FontSize="18"
+                                       FontWeight="SemiBold"
+                                       Foreground="#183B56"
+                                       Margin="0,0,0,8"/>
+
+                            <TextBlock Text="Selecciona un encargado o cajero para asignarle una nueva contraseña."
+                                       Foreground="#667085"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,12"/>
+
+                            <PasswordBox x:Name="PasswordRestablecer"
+                                         Style="{StaticResource CampoContrasena}"
+                                         PasswordChanged="PasswordRestablecer_PasswordChanged"
+                                         MaxLength="128"
+                                         Margin="0,0,0,12"/>
+
+                            <Button Content="Restablecer contraseña"
+                                    Command="{Binding RestablecerContrasenaCommand}"
+                                    Style="{StaticResource BotonPrincipal}"
+                                    Height="42"/>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+        <!-- Mensajes de resultado -->
+        <Border Grid.Row="2"
+                Background="#E8F1F4"
+                CornerRadius="8"
+                Padding="12"
+                Margin="0,14,0,0">
+
+            <TextBlock Text="{Binding Mensaje}"
+                       Foreground="#183B56"
+                       TextWrapping="Wrap"/>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,424 @@
+﻿<Window x:Class="Heladeria.Desktop.Views.InventarioWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Heladeria.Desktop.Views"
+        mc:Ignorable="d"
+        Title="Heladería | Inventario"
+        Height="760"
+        Width="1250"
+        MinHeight="650"
+        MinWidth="1050"
+        WindowStartupLocation="CenterScreen"
+        Background="#F3F5F9"
+        Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <Style x:Key="Campo" TargetType="TextBox">
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="BorderBrush" Value="#D6DCE5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,12"/>
+        </Style>
+
+        <Style x:Key="Accion" TargetType="Button">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Background" Value="#176B75"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="RowHeight" Value="39"/>
+            <Setter Property="ColumnHeaderHeight" Value="36"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="18">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Encabezado -->
+        <Border Grid.Row="0"
+                Background="#183B56"
+                CornerRadius="12"
+                Padding="20"
+                Margin="0,0,0,14">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="Inventario"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+
+                    <TextBlock Text="Existencias, artículos, mermas y ajustes."
+                               Foreground="#D8E8F0"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <Button Grid.Column="1"
+                        Content="← Volver al menú"
+                        Click="Volver_Click"
+                        Background="White"
+                        Foreground="#183B56"
+                        BorderThickness="0"
+                        Padding="14,10"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <TabControl Grid.Row="1">
+
+            <!-- TAB 1: EXISTENCIAS -->
+            <TabItem Header="Existencias y alertas">
+                <Grid Margin="12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <DockPanel Margin="0,0,0,12">
+                        <Button Content="Actualizar"
+                                Command="{Binding CargarCommand}"
+                                Style="{StaticResource Accion}"
+                                DockPanel.Dock="Right"
+                                Width="115"/>
+
+                        <StackPanel>
+                            <TextBox Style="{StaticResource Campo}"
+                                     Width="320"
+                                     HorizontalAlignment="Left"
+                                     Text="{Binding BuscarExistencias, UpdateSourceTrigger=PropertyChanged}"
+                                     ToolTip="Buscar por nombre o tipo de artículo"
+                                     Margin="0,0,0,8"/>
+
+                            <CheckBox Content="Mostrar solo artículos que necesitan reposición"
+                                      IsChecked="{Binding SoloBajoMinimo}"
+                                      Margin="0,0,0,6"/>
+                        </StackPanel>
+                    </DockPanel>
+
+                    <DataGrid Grid.Row="1"
+                              ItemsSource="{Binding Existencias}">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Artículo"
+                                                Binding="{Binding Nombre}"
+                                                Width="*"/>
+
+                            <DataGridTextColumn Header="Tipo"
+                                                Binding="{Binding TipoArticulo}"
+                                                Width="135"/>
+
+                            <DataGridTextColumn Header="Existencia"
+                                                Binding="{Binding ExistenciaActual, StringFormat={}{0:N3}}"
+                                                Width="105"/>
+
+                            <DataGridTextColumn Header="Unidad"
+                                                Binding="{Binding Abreviatura}"
+                                                Width="80"/>
+
+                            <DataGridTextColumn Header="Stock mínimo"
+                                                Binding="{Binding StockMinimo, StringFormat={}{0:N3}}"
+                                                Width="105"/>
+
+                            <DataGridCheckBoxColumn Header="Reponer"
+                                                    Binding="{Binding RequiereReposicion}"
+                                                    Width="75"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- TAB 2: ARTÍCULOS -->
+            <TabItem Header="Artículos">
+                <Grid Margin="12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.1*"/>
+                        <ColumnDefinition Width="14"/>
+                        <ColumnDefinition Width="0.9*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <DataGrid Grid.Column="0"
+                              ItemsSource="{Binding Articulos}">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre"
+                                                Binding="{Binding Nombre}"
+                                                Width="*"/>
+
+                            <DataGridTextColumn Header="Tipo"
+                                                Binding="{Binding TipoArticulo}"
+                                                Width="130"/>
+
+                            <DataGridCheckBoxColumn Header="Activo"
+                                                    Binding="{Binding Activo}"
+                                                    Width="65"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <ScrollViewer Grid.Column="2"
+                                  VerticalScrollBarVisibility="Auto">
+
+                        <StackPanel Margin="4">
+                            <TextBlock Text="Registrar artículo"
+                                       FontSize="19"
+                                       FontWeight="SemiBold"
+                                       Foreground="#183B56"
+                                       Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Tipo de artículo"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding TiposArticulo}"
+                                      SelectedItem="{Binding TipoArticulo}"
+                                      Height="36"
+                                      Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Nombre del ingrediente o material"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding NombreArticulo, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="150"/>
+
+                            <TextBlock Text="Presentación vendible (solo producto terminado)"
+                                       FontWeight="SemiBold"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding Presentaciones}"
+                                      SelectedItem="{Binding PresentacionNueva}"
+                                      DisplayMemberPath="NombreCompleto"
+                                      IsEnabled="{Binding EsProductoTerminado}"
+                                      Height="36"
+                                      Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Unidad de medida"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding Unidades}"
+                                      SelectedItem="{Binding UnidadSeleccionada}"
+                                      DisplayMemberPath="Nombre"
+                                      Height="36"
+                                      Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Stock mínimo"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding StockMinimoTexto, UpdateSourceTrigger=PropertyChanged}"/>
+
+                            <Button Content="Registrar artículo"
+                                    Command="{Binding RegistrarArticuloCommand}"
+                                    Style="{StaticResource Accion}"
+                                    Margin="0,0,0,8"/>
+
+                            <Button Content="Limpiar formulario"
+                                    Command="{Binding LimpiarArticuloCommand}"
+                                    Height="38"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+
+            <!-- TAB 3: MERMAS -->
+            <TabItem Header="Mermas y desperdicios">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Margin="18"
+                          MaxWidth="720"
+                          HorizontalAlignment="Left">
+
+                        <StackPanel>
+                            <TextBlock Text="Registrar merma"
+                                       FontSize="20"
+                                       FontWeight="SemiBold"
+                                       Foreground="#183B56"
+                                       Margin="0,0,0,8"/>
+
+                            <TextBlock Text="Selecciona el artículo y la cantidad que debes retirar del inventario. El sistema elegirá los lotes disponibles según su vencimiento."
+                                       TextWrapping="Wrap"
+                                       Foreground="#667085"
+                                       Margin="0,0,0,18"/>
+
+                            <TextBlock Text="Artículo"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding ArticulosActivos}"
+                                      SelectedItem="{Binding ArticuloMerma}"
+                                      DisplayMemberPath="Nombre"
+                                      Height="38"
+                                      Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Cantidad a retirar"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding CantidadMermaTexto, UpdateSourceTrigger=PropertyChanged}"/>
+
+                            <TextBlock Text="Motivo"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding MotivosMerma}"
+                                      SelectedItem="{Binding MotivoMerma}"
+                                      Height="38"
+                                      Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Observaciones"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding ObservacionesMerma, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="240"
+                                     AcceptsReturn="True"
+                                     Height="75"
+                                     VerticalContentAlignment="Top"/>
+
+                            <Button Content="Registrar merma"
+                                    Command="{Binding RegistrarMermaCommand}"
+                                    Style="{StaticResource Accion}"
+                                    Margin="0,0,0,8"/>
+
+                            <Button Content="Limpiar formulario"
+                                    Command="{Binding LimpiarMermaCommand}"
+                                    Height="38"/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+
+            <!-- TAB 4: AJUSTES -->
+            <TabItem Header="Ajustes de inventario">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Grid Margin="18"
+                          MaxWidth="720"
+                          HorizontalAlignment="Left">
+
+                        <StackPanel>
+                            <TextBlock Text="Ajustar existencias"
+                                       FontSize="20"
+                                       FontWeight="SemiBold"
+                                       Foreground="#183B56"
+                                       Margin="0,0,0,8"/>
+
+                            <TextBlock Text="Indica la cantidad real contada. El sistema comparará ese valor con las existencias registradas y generará la entrada o salida correspondiente."
+                                       Foreground="#667085"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,18"/>
+
+                            <TextBlock Text="Artículo"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding ArticulosActivos}"
+                                      SelectedItem="{Binding ArticuloAjuste}"
+                                      DisplayMemberPath="Nombre"
+                                      Height="38"
+                                      Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Cantidad física contada"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding CantidadContadaTexto, UpdateSourceTrigger=PropertyChanged}"/>
+
+                            <TextBlock Text="Motivo del ajuste"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding MotivoAjuste, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="200"/>
+
+                            <TextBlock Text="Costo unitario (necesario si aumenta el inventario)"
+                                       FontWeight="SemiBold"
+                                       TextWrapping="Wrap"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding CostoEntradaTexto, UpdateSourceTrigger=PropertyChanged}"/>
+
+                            <TextBlock Text="Código de lote (opcional)"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding CodigoLoteAjuste, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="80"/>
+
+                            <TextBlock Text="Fecha de vencimiento (opcional)"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <DatePicker SelectedDate="{Binding FechaVencimientoAjuste}"
+                                        Height="35"
+                                        Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Observaciones"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding ObservacionesAjuste, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="240"
+                                     AcceptsReturn="True"
+                                     Height="70"
+                                     VerticalContentAlignment="Top"/>
+
+                            <Button Content="Registrar ajuste"
+                                    Command="{Binding RegistrarAjusteCommand}"
+                                    Style="{StaticResource Accion}"
+                                    Margin="0,0,0,8"/>
+
+                            <Button Content="Limpiar formulario"
+                                    Command="{Binding LimpiarAjusteCommand}"
+                                    Height="38"/>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+
+        <Border Grid.Row="2"
+                Background="#E8F1F4"
+                CornerRadius="8"
+                Padding="12"
+                Margin="0,12,0,0">
+
+            <TextBlock Text="{Binding Mensaje}"
+                       Foreground="#183B56"
+                       TextWrapping="Wrap"/>
+        </Border>
+    </Grid>
+    
+</Window>

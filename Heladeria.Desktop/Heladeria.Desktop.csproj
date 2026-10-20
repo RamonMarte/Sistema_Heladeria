@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NuGet.Packaging" Version="7.9.0" />
+    <PackageReference Include="QuestPDF" Version="2026.9.1" />
     <PackageReference Include="Stripe.net" Version="53.0.0" />
   </ItemGroup>
 

@@ -140,5 +140,160 @@ namespace Heladeria.Desktop.Views
             // Minimizar el menú principal.
             WindowState = WindowState.Minimized;
         }
+
+        private void AbrirUsuarios_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            var app = (App)Application.Current;
+
+            var ventana = new UsuariosWindow(
+                app.ApiClient,
+                this);
+
+            ventana.Show();
+
+            WindowState = WindowState.Minimized;
+
+            ventana.Activate();
+        }
+
+        private void AbrirProductos_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            var app = (App)Application.Current;
+
+            if (!app.SessionService.EsAdministrador &&
+                !app.SessionService.EsEncargado)
+            {
+                MessageBox.Show(
+                    "No tienes permisos para administrar productos.",
+                    "Acceso denegado",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+
+                return;
+            }
+
+            var ventana = new ProductosWindow(
+                app.ApiClient,
+                this);
+
+            ventana.Show();
+
+            WindowState = WindowState.Minimized;
+            ventana.Activate();
+        }
+
+        private void AbrirInventario_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            var app = (App)Application.Current;
+
+            if (!app.SessionService.EsAdministrador &&
+                !app.SessionService.EsEncargado)
+            {
+                MessageBox.Show(
+                    "No tienes permisos para administrar el inventario.",
+                    "Acceso denegado",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+
+                return;
+            }
+
+            var ventana = new InventarioWindow(
+                app.ApiClient,
+                this);
+
+            ventana.Show();
+
+            WindowState = WindowState.Minimized;
+            ventana.Activate();
+        }
+
+        private void AbrirCompras_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            var app = (App)Application.Current;
+
+            if (!app.SessionService.EsAdministrador &&
+                !app.SessionService.EsEncargado)
+            {
+                MessageBox.Show(
+                    "No tienes permisos para administrar compras.",
+                    "Acceso denegado",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+
+                return;
+            }
+
+            var ventana = new ComprasWindow(app.ApiClient, this);
+
+            ventana.Show();
+
+            WindowState = WindowState.Minimized;
+            ventana.Activate();
+        }
+
+        private void AbrirReportes_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            var app = (App)Application.Current;
+
+            if (!app.SessionService.EsAdministrador)
+            {
+                MessageBox.Show(
+                    "Solo el administrador puede acceder a los reportes.",
+                    "Acceso denegado",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+
+                return;
+            }
+
+            var ventana = new ReportesWindow(
+                app.ApiClient,
+                this);
+
+            ventana.Show();
+
+            WindowState = WindowState.Minimized;
+
+            ventana.Activate();
+        }
+
+        private void AbrirCajas_Click(
+    object sender,
+    RoutedEventArgs e)
+        {
+            var app = (App)Application.Current;
+
+            if (!app.SessionService.EsAdministrador)
+            {
+                MessageBox.Show(
+                    "Solo el administrador puede gestionar las cajas.",
+                    "Acceso denegado",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+
+                return;
+            }
+
+            var ventana = new CajasWindow(
+                app.ApiClient,
+                this);
+
+            ventana.Show();
+
+            WindowState = WindowState.Minimized;
+
+            ventana.Activate();
+        }
     }
 }

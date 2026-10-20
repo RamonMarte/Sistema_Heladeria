@@ -1,0 +1,471 @@
+﻿<Window x:Class="Heladeria.Desktop.Views.ComprasWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Heladeria.Desktop.Views"
+        mc:Ignorable="d"
+        Title="Heladería | Proveedores y compras"
+        Height="780"
+        Width="1280"
+        MinHeight="670"
+        MinWidth="1050"
+        WindowStartupLocation="CenterScreen"
+        Background="#F3F5F9"
+        Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <Style x:Key="Campo" TargetType="TextBox">
+            <Setter Property="Height" Value="36"/>
+            <Setter Property="Padding" Value="9,5"/>
+            <Setter Property="BorderBrush" Value="#D6DCE5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+
+        <Style x:Key="Accion" TargetType="Button">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Background" Value="#176B75"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="RowHeight" Value="38"/>
+            <Setter Property="ColumnHeaderHeight" Value="36"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="18">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Background="#183B56"
+                CornerRadius="12"
+                Padding="20"
+                Margin="0,0,0,14">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="Proveedores y compras"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+
+                    <TextBlock Text="Gestiona proveedores, compras y recepción de mercancía."
+                               Foreground="#D8E8F0"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <Button Grid.Column="1"
+                        Content="← Volver al menú"
+                        Click="Volver_Click"
+                        Background="White"
+                        Foreground="#183B56"
+                        BorderThickness="0"
+                        Padding="14,10"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <TabControl Grid.Row="1">
+
+            <!-- PROVEEDORES -->
+            <TabItem Header="Proveedores">
+                <Grid Margin="12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.1*"/>
+                        <ColumnDefinition Width="14"/>
+                        <ColumnDefinition Width="0.9*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <DataGrid Grid.Column="0"
+                              ItemsSource="{Binding Proveedores}"
+                              SelectedItem="{Binding ProveedorSeleccionado, Mode=TwoWay}"
+                              IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Proveedor"
+                                                Binding="{Binding Nombre}"
+                                                Width="*"/>
+
+                            <DataGridTextColumn Header="Teléfono"
+                                                Binding="{Binding Telefono}"
+                                                Width="110"/>
+
+                            <DataGridCheckBoxColumn Header="Activo"
+                                                    Binding="{Binding Activo}"
+                                                    Width="65"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <ScrollViewer Grid.Column="2"
+                                  VerticalScrollBarVisibility="Auto">
+                        <StackPanel Margin="4">
+                            <TextBlock Text="Registrar o editar proveedor"
+                                       FontSize="19"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Nombre" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding NombreProveedor, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="150"/>
+
+                            <TextBlock Text="RNC" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding Rnc, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="20"/>
+
+                            <TextBlock Text="Teléfono" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding Telefono, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="30"/>
+
+                            <TextBlock Text="Correo" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding Correo, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="150"/>
+
+                            <TextBlock Text="Dirección" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding Direccion, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="250"/>
+
+                            <CheckBox Content="Proveedor activo"
+                                      IsChecked="{Binding ProveedorActivo}"
+                                      Margin="0,0,0,14"/>
+
+                            <Button Content="Guardar proveedor"
+                                    Command="{Binding GuardarProveedorCommand}"
+                                    Style="{StaticResource Accion}"
+                                    Margin="0,0,0,8"/>
+
+                            <Button Content="Nuevo proveedor"
+                                    Command="{Binding NuevoProveedorCommand}"
+                                    Height="38"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+
+            <!-- CREAR COMPRA -->
+            <TabItem Header="Nueva compra">
+                <Grid Margin="12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Margin="0,0,0,12">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                            <TextBlock Text="Número de compra o factura"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding NumeroCompra, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="40"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Margin="0,0,10,0">
+                            <TextBlock Text="Proveedor"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding ProveedoresActivos}"
+                                      SelectedItem="{Binding ProveedorParaCompra}"
+                                      DisplayMemberPath="Nombre"
+                                      Height="36"
+                                      Margin="0,0,0,10"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Descuento general (RD$)"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding DescuentoGeneralTexto, UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <DataGrid Grid.Row="1"
+                              ItemsSource="{Binding LineasCompra}"
+                              SelectedItem="{Binding LineaSeleccionada}"
+                              AutoGenerateColumns="False"
+                              CanUserAddRows="False"
+                              IsReadOnly="False">
+
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="Artículo" Width="2*">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <ComboBox
+                                            ItemsSource="{Binding DataContext.Articulos, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                            SelectedItem="{Binding ArticuloSeleccionado, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                            DisplayMemberPath="Nombre"
+                                            VerticalContentAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTextColumn Header="Cantidad"
+                                                Binding="{Binding CantidadTexto, UpdateSourceTrigger=PropertyChanged}"
+                                                Width="100"/>
+
+                            <DataGridTextColumn Header="Costo unitario"
+                                                Binding="{Binding CostoUnitarioTexto, UpdateSourceTrigger=PropertyChanged}"
+                                                Width="120"/>
+
+                            <DataGridTextColumn Header="Descuento"
+                                                Binding="{Binding DescuentoTexto, UpdateSourceTrigger=PropertyChanged}"
+                                                Width="100"/>
+
+                            <DataGridTextColumn Header="Importe"
+                                                Binding="{Binding Importe, StringFormat={}{0:N2}}"
+                                                IsReadOnly="True"
+                                                Width="110"/>
+
+                            <DataGridTemplateColumn Header="Quitar" Width="80">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Quitar"
+                                                Command="{Binding DataContext.QuitarLineaCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                                CommandParameter="{Binding}"
+                                                Padding="4,3"
+                                                Background="#FEF3F2"
+                                                Foreground="#B42318"
+                                                BorderThickness="0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <Grid Grid.Row="2" Margin="0,12,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel>
+                            <Button Content="+ Agregar artículo"
+                                    Command="{Binding AgregarLineaCommand}"
+                                    HorizontalAlignment="Left"
+                                    Padding="12,7"
+                                    Margin="0,0,0,8"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding ObservacionesCompra, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="500"
+                                     ToolTip="Observaciones de la compra"
+                                     Width="350"
+                                     HorizontalAlignment="Left"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1"
+                                    Width="270"
+                                    Margin="15,0,0,0">
+                            <Grid Margin="0,0,0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="Subtotal"/>
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding SubtotalCompra, StringFormat={}{0:N2}}"
+                                           FontWeight="SemiBold"/>
+                            </Grid>
+
+                            <Grid Margin="0,0,0,8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="Descuentos"/>
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding DescuentoTotalCompra, StringFormat={}{0:N2}}"/>
+                            </Grid>
+
+                            <Grid Margin="0,0,0,12">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="TOTAL"
+                                           FontSize="19"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock Grid.Column="1"
+                                           Text="{Binding TotalCompra, StringFormat={}{0:N2}}"
+                                           FontSize="21"
+                                           FontWeight="Bold"
+                                           Foreground="#176B75"/>
+                            </Grid>
+
+                            <Button Content="Registrar compra en borrador"
+                                    Command="{Binding CrearCompraCommand}"
+                                    Style="{StaticResource Accion}"
+                                    Height="44"/>
+
+                            <Button Content="Limpiar formulario"
+                                    Command="{Binding LimpiarCompraCommand}"
+                                    Height="36"
+                                    Margin="0,8,0,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <!-- RECEPCIÓN -->
+            <TabItem Header="Recepcionar mercancía">
+                <Grid Margin="12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Margin="0,0,0,12">
+                        <TextBlock Text="Selecciona una compra en borrador"
+                                   FontSize="18"
+                                   FontWeight="SemiBold"
+                                   Margin="0,0,0,8"/>
+
+                        <ComboBox ItemsSource="{Binding ComprasPendientes}"
+                                  SelectedItem="{Binding CompraSeleccionadaRecepcion}"
+                                  DisplayMemberPath="NumeroCompra"
+                                  Height="38"
+                                  Width="350"
+                                  HorizontalAlignment="Left"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Row="1"
+                              ItemsSource="{Binding LineasRecepcion}"
+                              IsReadOnly="False">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Artículo"
+                                                Binding="{Binding NombreArticulo}"
+                                                IsReadOnly="True"
+                                                Width="*"/>
+
+                            <DataGridTextColumn Header="Cantidad recibida"
+                                                Binding="{Binding Cantidad, StringFormat={}{0:N3}}"
+                                                IsReadOnly="True"
+                                                Width="130"/>
+
+                            <DataGridTextColumn Header="Unidad"
+                                                Binding="{Binding Abreviatura}"
+                                                IsReadOnly="True"
+                                                Width="80"/>
+
+                            <DataGridTextColumn Header="Código de lote"
+                                                Binding="{Binding CodigoLote, UpdateSourceTrigger=PropertyChanged}"
+                                                Width="150"/>
+
+                            <DataGridTemplateColumn Header="Vencimiento" Width="150">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <DatePicker
+                                            SelectedDate="{Binding FechaVencimiento, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <Button Grid.Row="2"
+                            Content="Confirmar recepción y aumentar existencias"
+                            Command="{Binding RecibirCompraCommand}"
+                            Style="{StaticResource Accion}"
+                            Height="44"
+                            Margin="0,12,0,0"
+                            HorizontalAlignment="Right"
+                            Width="340"/>
+                </Grid>
+            </TabItem>
+
+            <!-- HISTORIAL -->
+            <TabItem Header="Historial de compras">
+                <Grid Margin="12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button Content="Actualizar historial"
+                            Command="{Binding CargarCommand}"
+                            Style="{StaticResource Accion}"
+                            Width="150"
+                            HorizontalAlignment="Right"
+                            Margin="0,0,0,12"/>
+
+                    <DataGrid Grid.Row="1"
+                              ItemsSource="{Binding Compras}"
+                              IsReadOnly="True">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="N.º compra"
+                                                Binding="{Binding NumeroCompra}"
+                                                Width="150"/>
+
+                            <DataGridTextColumn Header="Fecha"
+                                                Binding="{Binding FechaCompra, StringFormat={}{0:dd/MM/yyyy HH:mm}}"
+                                                Width="155"/>
+
+                            <DataGridTextColumn Header="Proveedor"
+                                                Binding="{Binding ProveedorNombre}"
+                                                Width="*"/>
+
+                            <DataGridTextColumn Header="Estado"
+                                                Binding="{Binding Estado}"
+                                                Width="110"/>
+
+                            <DataGridTextColumn Header="Total"
+                                                Binding="{Binding Total, StringFormat={}{0:N2}}"
+                                                Width="120"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <Border Grid.Row="2"
+                Background="#E8F1F4"
+                CornerRadius="8"
+                Padding="12"
+                Margin="0,12,0,0">
+            <TextBlock Text="{Binding Mensaje}"
+                       Foreground="#183B56"
+                       TextWrapping="Wrap"/>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,409 @@
+﻿<Window x:Class="Heladeria.Desktop.Views.ProductosWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Heladeria.Desktop.Views"
+        mc:Ignorable="d"
+        Title="Heladería | Productos y precios"
+        Height="760"
+        Width="1250"
+        MinHeight="650"
+        MinWidth="1050"
+        WindowStartupLocation="CenterScreen"
+        Background="#F3F5F9"
+        Loaded="Window_Loaded">
+
+
+    <Window.Resources>
+        <Style x:Key="Campo" TargetType="TextBox">
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="BorderBrush" Value="#D6DCE5"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,12"/>
+        </Style>
+
+        <Style x:Key="Accion" TargetType="Button">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="Background" Value="#176B75"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="RowHeight" Value="38"/>
+            <Setter Property="ColumnHeaderHeight" Value="36"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="18">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Background="#183B56"
+                CornerRadius="12"
+                Padding="20"
+                Margin="0,0,0,14">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="Productos y precios"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+
+                    <TextBlock Text="Categorías, sabores, presentaciones y precios de venta."
+                               Foreground="#D8E8F0"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <Button Grid.Column="1"
+                        Content="← Volver al menú"
+                        Click="Volver_Click"
+                        Background="White"
+                        Foreground="#183B56"
+                        BorderThickness="0"
+                        Padding="14,10"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <TabControl Grid.Row="1">
+
+            <!-- Categorías -->
+            <TabItem Header="Categorías">
+                <Grid Margin="12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.1*"/>
+                        <ColumnDefinition Width="14"/>
+                        <ColumnDefinition Width="0.9*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <DataGrid Grid.Column="0"
+                              ItemsSource="{Binding Categorias}"
+                              SelectedItem="{Binding CategoriaSeleccionada, Mode=TwoWay}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nombre"
+                                                Binding="{Binding Nombre}"
+                                                Width="*"/>
+
+                            <DataGridTextColumn Header="Descripción"
+                                                Binding="{Binding Descripcion}"
+                                                Width="*"/>
+
+                            <DataGridCheckBoxColumn Header="Activa"
+                                                    Binding="{Binding Activa}"
+                                                    Width="70"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <ScrollViewer Grid.Column="2"
+                                  VerticalScrollBarVisibility="Auto">
+                        <StackPanel Margin="4">
+                            <TextBlock Text="Crear o editar categoría"
+                                       FontSize="18"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Nombre"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding NombreCategoria, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="80"/>
+
+                            <TextBlock Text="Descripción"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding DescripcionCategoria, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="250"
+                                     AcceptsReturn="True"
+                                     Height="80"
+                                     VerticalContentAlignment="Top"/>
+
+                            <CheckBox Content="Categoría activa"
+                                      IsChecked="{Binding CategoriaActiva}"
+                                      Margin="0,0,0,16"/>
+
+                            <Button Content="Guardar categoría"
+                                    Command="{Binding GuardarCategoriaCommand}"
+                                    Style="{StaticResource Accion}"
+                                    Margin="0,0,0,8"/>
+
+                            <Button Content="Nueva categoría"
+                                    Command="{Binding NuevaCategoriaCommand}"
+                                    Height="38"/>
+
+                            <Button Content="Actualizar listado"
+                                    Command="{Binding CargarCommand}"
+                                    Height="38"
+                                    Margin="0,8,0,0"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+
+            <!-- Productos -->
+            <TabItem Header="Productos">
+                <Grid Margin="12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.1*"/>
+                        <ColumnDefinition Width="14"/>
+                        <ColumnDefinition Width="0.9*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBox Grid.Row="0"
+                                 Style="{StaticResource Campo}"
+                                 Text="{Binding BuscarProducto, UpdateSourceTrigger=PropertyChanged}"
+                                 ToolTip="Buscar por nombre, sabor, categoría o código"
+                                 Margin="0,0,0,10"/>
+
+                        <DataGrid Grid.Row="1"
+                                  ItemsSource="{Binding Productos}"
+                                  SelectedItem="{Binding ProductoSeleccionado, Mode=TwoWay}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Producto"
+                                                    Binding="{Binding Nombre}"
+                                                    Width="*"/>
+
+                                <DataGridTextColumn Header="Categoría"
+                                                    Binding="{Binding CategoriaNombre}"
+                                                    Width="120"/>
+
+                                <DataGridCheckBoxColumn Header="Activo"
+                                                        Binding="{Binding Activo}"
+                                                        Width="65"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+
+                    <ScrollViewer Grid.Column="2"
+                                  VerticalScrollBarVisibility="Auto">
+                        <StackPanel Margin="4">
+                            <TextBlock Text="Crear o editar producto"
+                                       FontSize="18"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,14"/>
+
+                            <TextBlock Text="Categoría"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <ComboBox ItemsSource="{Binding CategoriasActivas}"
+                                      SelectedItem="{Binding CategoriaProductoSeleccionada}"
+                                      DisplayMemberPath="Nombre"
+                                      Height="36"
+                                      Margin="0,0,0,12"/>
+
+                            <TextBlock Text="Nombre del producto"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding NombreProducto, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="120"/>
+
+                            <TextBlock Text="Sabor"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding SaborProducto, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="80"/>
+
+                            <TextBlock Text="Descripción"
+                                       FontWeight="SemiBold"
+                                       Margin="0,0,0,5"/>
+
+                            <TextBox Style="{StaticResource Campo}"
+                                     Text="{Binding DescripcionProducto, UpdateSourceTrigger=PropertyChanged}"
+                                     MaxLength="300"
+                                     AcceptsReturn="True"
+                                     Height="65"
+                                     VerticalContentAlignment="Top"/>
+
+                            <CheckBox Content="Producto activo"
+                                      IsChecked="{Binding ProductoActivo}"
+                                      Margin="0,0,0,16"/>
+
+                            <Button Content="Guardar producto"
+                                    Command="{Binding GuardarProductoCommand}"
+                                    Style="{StaticResource Accion}"
+                                    Margin="0,0,0,8"/>
+
+                            <Button Content="Nuevo producto"
+                                    Command="{Binding NuevoProductoCommand}"
+                                    Height="38"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+
+            <!-- Presentaciones -->
+            <TabItem Header="Presentaciones y precios">
+                <Grid Margin="12">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0"
+                                Orientation="Horizontal"
+                                Margin="0,0,0,12">
+
+                        <TextBlock Text="Producto:"
+                                   VerticalAlignment="Center"
+                                   FontWeight="SemiBold"
+                                   Margin="0,0,10,0"/>
+
+                        <ComboBox ItemsSource="{Binding Productos}"
+                                  SelectedItem="{Binding ProductoSeleccionado}"
+                                  DisplayMemberPath="Nombre"
+                                  Width="330"
+                                  Height="36"/>
+
+                        <Button Content="Nueva presentación"
+                                Command="{Binding NuevaPresentacionCommand}"
+                                Height="36"
+                                Padding="10,5"
+                                Margin="12,0,0,0"/>
+                    </StackPanel>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.1*"/>
+                            <ColumnDefinition Width="14"/>
+                            <ColumnDefinition Width="0.9*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <DataGrid Grid.Column="0"
+                                  ItemsSource="{Binding Presentaciones}"
+                                  SelectedItem="{Binding PresentacionSeleccionada, Mode=TwoWay}">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Presentación"
+                                                    Binding="{Binding NombrePresentacion}"
+                                                    Width="*"/>
+
+                                <DataGridTextColumn Header="Tamaño"
+                                                    Binding="{Binding Tamano}"
+                                                    Width="90"/>
+
+                                <DataGridTextColumn Header="Precio"
+                                                    Binding="{Binding PrecioVenta, StringFormat={}{0:N2}}"
+                                                    Width="85"/>
+
+                                <DataGridCheckBoxColumn Header="Activa"
+                                                        Binding="{Binding Activa}"
+                                                        Width="65"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <ScrollViewer Grid.Column="2"
+                                      VerticalScrollBarVisibility="Auto">
+                            <StackPanel Margin="4">
+                                <TextBlock Text="Datos de la presentación"
+                                           FontSize="18"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,14"/>
+
+                                <TextBlock Text="Nombre de presentación"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,5"/>
+
+                                <TextBox Style="{StaticResource Campo}"
+                                         Text="{Binding NombrePresentacion, UpdateSourceTrigger=PropertyChanged}"
+                                         MaxLength="100"/>
+
+                                <TextBlock Text="Tamaño"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,5"/>
+
+                                <TextBox Style="{StaticResource Campo}"
+                                         Text="{Binding Tamano, UpdateSourceTrigger=PropertyChanged}"
+                                         MaxLength="50"/>
+
+                                <TextBlock Text="Código interno"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,5"/>
+
+                                <TextBox Style="{StaticResource Campo}"
+                                         Text="{Binding CodigoInterno, UpdateSourceTrigger=PropertyChanged}"
+                                         MaxLength="40"/>
+
+                                <TextBlock Text="Código de barras (opcional)"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,5"/>
+
+                                <TextBox Style="{StaticResource Campo}"
+                                         Text="{Binding CodigoBarras, UpdateSourceTrigger=PropertyChanged}"
+                                         MaxLength="80"/>
+
+                                <TextBlock Text="Precio de venta (RD$)"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,5"/>
+
+                                <TextBox Style="{StaticResource Campo}"
+                                         Text="{Binding PrecioVentaTexto, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <TextBlock Text="Costo estimado (RD$)"
+                                           FontWeight="SemiBold"
+                                           Margin="0,0,0,5"/>
+
+                                <TextBox Style="{StaticResource Campo}"
+                                         Text="{Binding CostoEstimadoTexto, UpdateSourceTrigger=PropertyChanged}"/>
+
+                                <CheckBox Content="Presentación activa"
+                                          IsChecked="{Binding PresentacionActiva}"
+                                          Margin="0,0,0,16"/>
+
+                                <Button Content="Guardar presentación"
+                                        Command="{Binding GuardarPresentacionCommand}"
+                                        Style="{StaticResource Accion}"
+                                        Margin="0,0,0,8"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <Border Grid.Row="2"
+                Background="#E8F1F4"
+                CornerRadius="8"
+                Padding="12"
+                Margin="0,12,0,0">
+            <TextBlock Text="{Binding Mensaje}"
+                       Foreground="#183B56"
+                       TextWrapping="Wrap"/>
+        </Border>
+    </Grid>
+</Window>
