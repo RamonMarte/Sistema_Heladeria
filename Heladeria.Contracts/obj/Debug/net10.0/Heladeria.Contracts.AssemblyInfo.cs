@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Heladeria.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+413af0d8ee5d96396ca74f805f51d92a91cc3bda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f18796dde7e982ad7304ea91538737ed3befabcc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Heladeria.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Heladeria.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

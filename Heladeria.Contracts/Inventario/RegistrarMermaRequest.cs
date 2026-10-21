@@ -17,7 +17,7 @@ namespace Heladeria.Contracts.Inventario
 
         [Required]
         [RegularExpression(
-            "^(Vencido>|Dañado|Danado|Derrame|Contaminado|ConsumoInterno|Otro)$")]
+            "^(Vencido|Dañado|Danado|Derrame|Contaminado|ConsumoInterno|Otro)$")]
         public string Motivo { get; set; } = string.Empty;
 
         [StringLength(240)]

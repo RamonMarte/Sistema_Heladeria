@@ -295,5 +295,34 @@ namespace Heladeria.Desktop.Views
 
             ventana.Activate();
         }
+
+        private void AbrirRecetas_Click(
+            object sender,
+            RoutedEventArgs e)
+        {
+            var app = (App)Application.Current;
+
+            if (!app.SessionService.EsAdministrador &&
+                !app.SessionService.EsEncargado)
+            {
+                MessageBox.Show(
+                    "Solo el administrador o el encargado puede gestionar recetas.",
+                    "Acceso denegado",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning);
+
+                return;
+            }
+
+            var ventana = new RecetasWindow(
+                app.ApiClient,
+                this);
+
+            ventana.Show();
+
+            WindowState = WindowState.Minimized;
+
+            ventana.Activate();
+        }
     }
 }

@@ -23,6 +23,9 @@
     <Compile Update="Views\PuntoVentaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\RecetasWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ReportesWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

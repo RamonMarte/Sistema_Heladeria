@@ -66,3 +66,5 @@ C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desk
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\bin\Debug\net10.0-windows\runtimes\win-x86\native\qpdf.dll
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\CajasWindow.g.cs
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\CajasWindow.baml
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\RecetasWindow.g.cs
+C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Desktop\obj\Debug\net10.0-windows\Views\RecetasWindow.baml

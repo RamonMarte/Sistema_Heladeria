@@ -312,72 +312,54 @@ namespace Heladeria.Api.Controllers
 
                     decimal costoLinea = 0;
 
-                    // Si existe un artículo de producto terminado vinculado,
-                    // descontamos la presentación directamente del inventario.
-                    var articuloTerminado = await _context.ArticulosInventario
-                        .FirstOrDefaultAsync(a =>
-                            a.ProductoPresentacionId ==
-                                presentacion.ProductoPresentacionId &&
-                            a.TipoArticulo == "ProductoTerminado" &&
-                            a.Activo);
+                    // Primero buscamos la receta de la presentación.
+                    var receta = await _context.RecetaDetalles
+                        .Include(r => r.ArticuloInventario)
+                        .Where(r =>
+                            r.ProductoPresentacionId ==
+                            presentacion.ProductoPresentacionId)
+                        .ToListAsync();
 
-                    if (articuloTerminado is not null)
+                    // Si tiene receta, descontamos los ingredientes y materiales.
+                    // La receta tiene prioridad sobre el producto terminado.
+                    if (receta.Count > 0)
                     {
-                        var consumo = await ConsumirDeLotesAsync(
-                            articuloTerminado.ArticuloInventarioId,
-                            linea.Cantidad,
-                            usuarioId,
-                            venta.VentaId,
-                            numeroVenta);
-
-                        if (!consumo.Exito)
-                        {
-                            await transaction.RollbackAsync();
-                            return BadRequest(new { mensaje = consumo.Error });
-                        }
-
-                        costoLinea += consumo.CostoTotal;
-                    }
-                    else
-                    {
-                        var receta = await _context.RecetaDetalles
-                            .Include(r => r.ArticuloInventario)
-                            .Where(r =>
-                                r.ProductoPresentacionId ==
-                                    presentacion.ProductoPresentacionId)
-                            .ToListAsync();
-
-                        if (receta.Count == 0)
-                        {
-                            await transaction.RollbackAsync();
-                            return BadRequest(new
-                            {
-                                mensaje =
-                                    $"La presentación '{presentacion.Producto.Nombre} - " +
-                                    $"{presentacion.NombrePresentacion}' no tiene receta " +
-                                    "ni artículo de producto terminado vinculado al inventario."
-                            });
-                        }
-
                         foreach (var ingrediente in receta)
                         {
-                            if (!ingrediente.ArticuloInventario.Activo)
+                            var articulo = ingrediente.ArticuloInventario;
+
+                            if (!articulo.Activo)
                             {
                                 await transaction.RollbackAsync();
+
                                 return BadRequest(new
                                 {
                                     mensaje =
-                                        $"El artículo '{ingrediente.ArticuloInventario.Nombre}' " +
+                                        $"El artículo '{articulo.Nombre}' " +
                                         "de la receta está inactivo."
                                 });
                             }
 
-                            // Los lotes admiten tres decimales de cantidad.
-                            // Redondeamos hacia arriba para no consumir menos
-                            // inventario del que requiere la receta.
+                            if (articulo.TipoArticulo != "Ingrediente" &&
+                                articulo.TipoArticulo != "Material")
+                            {
+                                await transaction.RollbackAsync();
+
+                                return BadRequest(new
+                                {
+                                    mensaje =
+                                        $"El artículo '{articulo.Nombre}' " +
+                                        "debe ser un ingrediente o material " +
+                                        "para utilizarse en una receta."
+                                });
+                            }
+
+                            // Calculamos el consumo total para la cantidad vendida.
+                            // El inventario admite tres decimales.
                             var cantidadNecesaria = decimal.Ceiling(
                                 linea.Cantidad *
-                                ingrediente.CantidadPorUnidad * 1000m) / 1000m;
+                                ingrediente.CantidadPorUnidad *
+                                1000m) / 1000m;
 
                             var consumo = await ConsumirDeLotesAsync(
                                 ingrediente.ArticuloInventarioId,
@@ -389,17 +371,61 @@ namespace Heladeria.Api.Controllers
                             if (!consumo.Exito)
                             {
                                 await transaction.RollbackAsync();
+
                                 return BadRequest(new
                                 {
                                     mensaje =
                                         $"Inventario insuficiente para " +
-                                        $"'{ingrediente.ArticuloInventario.Nombre}': " +
-                                        consumo.Error
+                                        $"'{articulo.Nombre}': {consumo.Error}"
                                 });
                             }
 
+                            // Acumulamos el costo de los ingredientes y materiales.
                             costoLinea += consumo.CostoTotal;
                         }
+                    }
+                    else
+                    {
+                        // Si no tiene receta, buscamos el producto terminado.
+                        var articuloTerminado = await _context.ArticulosInventario
+                            .FirstOrDefaultAsync(a =>
+                                a.ProductoPresentacionId ==
+                                    presentacion.ProductoPresentacionId &&
+                                a.TipoArticulo == "ProductoTerminado" &&
+                                a.Activo);
+
+                        if (articuloTerminado is null)
+                        {
+                            await transaction.RollbackAsync();
+
+                            return BadRequest(new
+                            {
+                                mensaje =
+                                    $"La presentación '{presentacion.Producto.Nombre} - " +
+                                    $"{presentacion.NombrePresentacion}' no tiene receta " +
+                                    "ni artículo de producto terminado vinculado al inventario."
+                            });
+                        }
+
+                        // Sin receta, descontamos directamente el producto terminado.
+                        var consumo = await ConsumirDeLotesAsync(
+                            articuloTerminado.ArticuloInventarioId,
+                            linea.Cantidad,
+                            usuarioId,
+                            venta.VentaId,
+                            numeroVenta);
+
+                        if (!consumo.Exito)
+                        {
+                            await transaction.RollbackAsync();
+
+                            return BadRequest(new
+                            {
+                                mensaje = consumo.Error
+                            });
+                        }
+
+                        costoLinea += consumo.CostoTotal;
                     }
 
                     var importeLinea = Math.Round(

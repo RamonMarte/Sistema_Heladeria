@@ -97,4 +97,3 @@ C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Api\
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Api\bin\Debug\net10.0\runtimes\win-x64\native\qpdf.dll
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Api\bin\Debug\net10.0\runtimes\win-x86\native\QuestPdfSkia.dll
 C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Api\bin\Debug\net10.0\runtimes\win-x86\native\qpdf.dll
-C:\Users\Elizabeth\Documents\Rafiki\Proyecto_Millonario\Heladeria\Heladeria.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
